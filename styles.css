@@ -1,37 +1,36 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fafafa;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
 .post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 400px;
-    background-color: white;
-    border: 1px solid #dbdbdb;
-    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .post-header {
     display: flex;
     align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #dbdbdb;
+    padding: 12px 8px;
+    width: 100%;
 }
 
 .profile-pic {
     width: 40px;
     height: 40px;
+    padding: 8px 8px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -41,37 +40,36 @@ body {
 }
 
 .username {
-    font-weight: bold;
-    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
 }
 
 .location {
-    font-size: 12px;
-    color: gray;
+    font-size: 0.9em;
+    color: #888;
+    margin: 0;
 }
 
 .options {
-    cursor: pointer;
-    font-size: 18px;
-    color: #262626;
+    color: #888;
+    padding: 8px 8px;
 }
 
 .post-image {
     width: 100%;
-    height: auto;
 }
 
 .post-actions {
     display: flex;
-    align-items: center;
-    padding: 10px;
-    border-top: 1px solid #dbdbdb;
+    padding: 8px 8px;
+    width: 95%;
+    justify-content: space-between;
 }
 
 .post-actions i {
-    font-size: 24px;
-    margin-right: 15px;
+    font-size: 1.5em;
     cursor: pointer;
+    color: #333;
 }
 
 .bookmark {
@@ -79,20 +77,17 @@ body {
 }
 
 .post-likes {
-    padding: 0 10px;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.post-likes strong {
-    font-weight: bold;
+    padding: 8px 8px;
+    font-size: 0.9em;
+    color: #333;
 }
 
 .post-caption {
-    padding: 10px;
+    padding: 8px 8px;
+    font-size: 0.9em;
+    color: #333;
 }
 
-.post-caption p {
-    font-size: 14px;
-    line-height: 1.4;
+.post-caption strong {
+    font-weight: 500;
 }
